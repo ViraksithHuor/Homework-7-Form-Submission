@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white min-h-screen flex items-center justify-center">
+
+  <div class="w-full max-w-md p-8 bg-neutral-900 rounded-lg shadow-lg text-center">
+    
+    <h1 class="text-2xl font-bold mb-4">
+      Welcome, {{fullName}}!
+    </h1>
+
+    <div class="space-y-2 text-left mb-6">
+      <p><strong>Email:</strong> {{email}}</p>
+      <p><strong>Course Track:</strong> {{course}}</p>
+    </div>
+
+    <div class="flex justify-center">
+      <img src="{{imagePath}}" alt="Profile Picture"
+        class="w-40 h-40 object-cover rounded-full border border-white">
+    </div>
+
+  </div>
+
+</body>
+</html>
